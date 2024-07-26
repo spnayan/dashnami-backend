@@ -92,16 +92,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-
+print(os.environ.get("NAME"))
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+      'default': {
+          'ENGINE': 'django.db.backends.postgresql_psycopg2',
+          'NAME': os.environ.get("NAME"),
+          'USER': os.environ.get("USER"),
+          'PASSWORD':os.environ.get("PASSWORD"),
+          'HOST': os.environ.get("HOST"),
+          'PORT': os.environ.get("PORT"),
+      }
+  }
 
 
 # Password validation
