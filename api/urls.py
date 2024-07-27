@@ -4,9 +4,10 @@ from .views import PersonViewSet,show_db_settings
 
 router = DefaultRouter()
 router.register(r'persons', PersonViewSet)
-router.register(r'settings', show_db_settings)
 
 
 urlpatterns = [
     path('', include(router.urls)),
+        path('settings/', show_db_settings, name='show_db_settings'),
+
 ]

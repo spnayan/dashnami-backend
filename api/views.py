@@ -22,8 +22,5 @@ class PersonViewSet(viewsets.ModelViewSet):
     permission_classes = [AllowAny]
 
 # Add this in your views.py for debugging purposes
-from django.http import JsonResponse
-from django.conf import settings
-
 def show_db_settings(request):
     return JsonResponse(settings.DATABASES)
