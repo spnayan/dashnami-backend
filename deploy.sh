@@ -1,6 +1,7 @@
 #!/bin/bash
 # Build the project
 echo "Building the project..."
+echo pip --version
 apt install python3-pip
 pip install -r requirements.txt
 
