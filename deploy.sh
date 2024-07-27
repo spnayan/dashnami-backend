@@ -1,6 +1,7 @@
 #!/bin/bash
 # Build the project
 echo "Building the project..."
+apt install python3-pip
 pip install -r requirements.txt
 
 echo "Make Migration..."
