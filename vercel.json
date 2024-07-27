@@ -10,6 +10,6 @@
             "dest": "backend/wsgi.py"
         }
     ],
-    "buildCommand": "sh deploy.sh"
+    "buildCommand": "pip install -r requirements.txt && python manage.py migrate"
 
 }
