@@ -2,8 +2,7 @@
 # Build the project
 echo "Building the project..."
 echo pip --version
-apt install python3-pip
-pip install -r requirements.txt
+python3.9 -m pip install -r requirements.txt
 
 echo "Make Migration..."
 python3.9 manage.py makemigrations --noinput
