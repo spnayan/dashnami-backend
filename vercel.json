@@ -25,5 +25,5 @@
         "dest": "backend/wsgi.py"
       }
     ],
-    "buildCommand": "./deploy.sh"
+    "buildCommand":" echo 'hello' "
   }
